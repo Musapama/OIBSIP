@@ -1,144 +1,71 @@
-button,
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.fullContainer{
-    width: 100%;
-    
-    
-}
-
-*{
-    margin: 0px;
-    padding-bottom: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-    background-color: rgb(211, 99, 24) ;
-}
-
-header .container{
+body {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-header .container .logo img{
-    height: 100px;
-    padding-right: 0px;
-    width: 350px;
-    
+.container {
+    max-width: 450px; /* Added px unit */
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 3px goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background: grey;
 }
 
-header .container .logo{
-    padding: 1px 9px;
-    height: 30px;
+.kelvin, .celsius, .fahrenheit {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Adjusted margin */
 }
 
-.container{
-    width: 1140px;
-    margin: auto;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-}
-
-header nav ul li a{
-    display: inline-block;
-    height: 100px;
-    line-height: 110px;
-    padding: 0 10px;
-    text-transform: uppercase;
-    font-size: 25px;
-    color: #fcba06;;
-}
-header nav ul li a:hover{
-    background-color: rgb(197, 164, 18);
-    height: max-contents;
-}
-
-.banner {
-   background-color: #f5de5e;
-   padding-bottom: 100px; 
-    margin-bottom: 100px; 
-}
-
-.banner h1 {
-    margin-top: 150px;
-    padding-left: 250px;
-    width: 30px;
-    display: inline-block;
-    font-size: 60px;
-    color: rgb(167, 69, 4);
-    text-shadow: 2px 2px 4px red; 
-    line-height: 44px; 
-    font-weight: bolder; 
-}
-
-.banner h1 span.highlight {
-    color: #FFD700;
-}
-
-
-
-.banner h3 {
-    padding-top: 12px;
-    padding-left: 253px;
-    font-size: 20px;
-    font-style: italic;
-    color: rgb(167, 69, 4);
-    font-weight: bolder;
-}
-
-.banner h3 span.highlight {
-    color: #f8b706; 
-    font-weight: bolder;
-    
-    
-}
-
-.banner p{
-    color:rgb(167, 69, 4);
-    padding-left: 250px;
-    text-shadow: 30px;
-    margin-top: 30px;
-    padding-right: 200px;
-    font-weight: bolder;
-}
-
-.banner button{
-    background-color: #FFD700;
-    color: brown;
-    padding: 15px 15px;
-    margin-top: 20px;
-    font-size: 12px;
+input {
+    flex: 6;
+    height: 70px;
+    border: none;
     outline: none;
-    width: 120px;
-    border-color: brown;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px; /* Removed space between 10 and px */
+    margin-left: 10px; /* Adjusted margin */
     font-weight: bold;
-    
-    
+    font-size: 30px;
 }
-.banner button:hover{
+
+label {
+    font-size: 30px; /* Added label styling */
+    font-weight: bold;
+    margin-left: 10px; /* Space between input and label */
+}
+
+.button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button button {
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 3px;
+    outline: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: black;
     color: white;
 }
 
-.containers button{
-
-    margin-left: 250px;
-}
-
-.pepimage{
- padding-left: 450px;
- position: relative;
-    top: 50px;
+h1 {
+    color: brown;
+    padding-left: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 20px;
 }
